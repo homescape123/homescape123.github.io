@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homescapes</title>
+    <link rel="icon" href="/assets/images/site-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/main.js"></script>
+    <link rel="preload" href="https://www.miniplay.com/embed/homescapes" as="fetch" crossorigin>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="assets/images/action/Age_of_War.avif" width="48" height="48" alt="Zontal Arcade Logo" loading="lazy">
+                <span>Homescapes</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+    <div class="container-zon">
+        <section class="search-section">
+            <div class="search-bar">
+                <form role="search" id="searchForm">
+                    <input type="search" id="searchInput" placeholder="Search games..." aria-label="Search through Zontal games">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="search-loading" id="searchLoading">Loading...</div>
+            <div class="search-results" id="searchResults">
+                <h2>Search Results</h2>
+                <div class="masonry-grid" id="searchGrid"></div>
+            </div>
+        </section>
+    </div>
+    <section class="game-container">
+            <div class="game-image">
+                <img id="gameImage" src="/assets/images/Homescapes.jpg" alt="Game Image" loading="lazy">
+            </div>
+            <div class="game-header">
+                <h1>Homescapes</h1>
+                <div class="game-meta">
+                    <span id="gameCategory">Puzzle| Rating: <span id="averageRating">4.5</span>/5</span>
+                    <div class="rating" id="gameRating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="rating-section">
+                <p>Rate this game:</p>
+                <div class="user-rating" id="userRating">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+            </div>
+           
+            <div class="game-iframe-container">
+                <iframe id="gameIframe" preload src="https://www.miniplay.com/embed/homescapes" title="Game Frame" loading="lazy"></iframe>
+            </div>
+            <div class="game-actions">
+                <button class="fullscreen-btn" id="fullscreenBtn">Enter Fullscreen</button>
+                 
+            </div>
+            <h2>Description</h2>
+             <div class="game-description" id="gameDescription">
+               Homescapes is a lovely game
+            </div>
+        </section>
+    <section class="all-games">
+        <h2 id="sectionTitle">All Games</h2>
+        <div id="zon_games" class="masonry-grid"></div>
+        <button id="loadMore" style="display:none;padding:.75rem 1.5rem;background:#10b981;color:#fff;border:none;border-radius:.5rem;cursor:pointer;margin:1rem auto;display:block">Load More</button>
+    </section>
+    <div class="container-zon">
+        <div class="menu-tabs" id="categories">
+            <h2>Game Categories</h2>
+            <div class="tabs">
+                <a href="index.html">All</a>
+                <a href="action.html">Action</a>
+                <a href="shooting.html">Shooting</a>
+                <a href="racing.html">Racing</a>
+                <a href="adventure.html">Adventure</a>
+                <a href="puzzle.html">Puzzle</a>
+                <a href="strategy.html">Strategy</a>
+                <a href="multiplayer.html">Multiplayer</a>
+                <a href="platform.html">Platform</a>
+                <a href="favorites.html">Favorites</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div  class="nav-links" style="justify-content: center;">
+                <a href="index.html" class="active">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        <p>© 2025 Homescapes. All rights reserved.</p>
+    </footer>
+     
+</body>
+</html>
